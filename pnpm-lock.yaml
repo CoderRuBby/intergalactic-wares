@@ -166,6 +166,9 @@ importers:
 
   .:
     dependencies:
+      create-next-app:
+        specifier: ^16.4.2
+        version: 16.4.2
       next:
         specifier: 16.4.2
         version: 16.4.2(@babel/core@7.29.7(supports-color@7.2.0))(@types/node@20.19.43)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -1050,6 +1053,11 @@ packages:
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
+
+  create-next-app@16.4.2:
+    resolution: {integrity: sha512-cl9Ub4WeZipMwADysfMZ3iUMOWel6kM64ODYI+N4ipWgKsb4KelkqQQqVbJEGljyyLzeHYum7bv+ZqFmO3Z+bA==}
+    engines: {node: '>=20.9.0'}
+    hasBin: true
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -2956,6 +2964,8 @@ snapshots:
   concat-map@0.0.1: {}
 
   convert-source-map@2.0.0: {}
+
+  create-next-app@16.4.2: {}
 
   cross-spawn@7.0.6:
     dependencies:
