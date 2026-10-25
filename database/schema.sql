@@ -1,3 +1,15 @@
+CREATE EXTENSION IF NOT EXISTS citext;
+
+REVOKE CONNECT ON DATABASE intergalactic_wares_test FROM PUBLIC;
+GRANT CONNECT ON DATABASE intergalactic_wares_test TO db_admin;
+
+
+CREATE SCHEMA IF NOT EXISTS users AUTHORIZATION db_admin;
+CREATE SCHEMA IF NOT EXISTS products AUTHORIZATION db_admin;
+CREATE SCHEMA IF NOT EXISTS reviews AUTHORIZATION db_admin;
+CREATE SCHEMA IF NOT EXISTS shopping_carts AUTHORIZATION db_admin;
+CREATE SCHEMA IF NOT EXISTS orders AUTHORIZATION db_admin;
+
 CREATE TABLE users.login_credentials (
     credential_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     email CITEXT NOT NULL UNIQUE CHECK (length (email) <= 254 AND email LIKE '%@%'),
@@ -50,7 +62,7 @@ CREATE TABLE products.categories (
     category_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     category_parent_id INT REFERENCES products.categories(category_id) ON DELETE RESTRICT,
     category_name TEXT NOT NULL,
-    category_slug TEXT NOT NULL UNIQUE
+    category_slug TEXT NOT NULL UNIQUE,
     CONSTRAINT unique_name_per_parent UNIQUE (category_parent_id, category_name)
 );
 
