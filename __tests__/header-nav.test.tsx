@@ -14,4 +14,14 @@ describe('HeaderNav', () => {
 
     expect(headerElement).toBeInTheDocument();
   });
+
+  it('has a logo image link', () => {
+    render(component);
+
+    const imageLink = screen.getByRole('link', {
+      name: /intergalactic wares logo/i,
+    });
+
+    expect(imageLink).toHaveAttribute('href', '/');
+  });
 });
