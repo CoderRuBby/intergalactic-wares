@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SearchBar from './search-bar';
 import LoginLink from './account-widget/login-link';
+import CartLink from './cart-widget/cart-link';
 
 export default function HeaderNav() {
   return (
@@ -11,6 +12,7 @@ export default function HeaderNav() {
       </Link>
       <SearchBar />
       <LoginLink />
+      <CartLink />
     </header>
   );
 }
