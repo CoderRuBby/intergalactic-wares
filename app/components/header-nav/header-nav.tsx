@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import SearchBar from './search-bar';
 
 export default function HeaderNav() {
   return (
@@ -7,6 +8,7 @@ export default function HeaderNav() {
       <Link href='/'>
         <Image src='' alt='Intergalactic Wares logo' fill={true} />
       </Link>
+      <SearchBar />
     </header>
   );
 }
