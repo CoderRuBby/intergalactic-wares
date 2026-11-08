@@ -8,7 +8,7 @@ describe('footer-nav', () => {
     component = <FooterNav />;
   });
 
-  it.skip('has an about link', () => {
+  it('has an about link', () => {
     render(component);
 
     const aboutLink = screen.getByRole('link', { name: /about/i });
