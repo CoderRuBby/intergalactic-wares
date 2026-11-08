@@ -1,9 +1,9 @@
 import HomeContentCards from '@/app/components/home-content-cards';
 import { render, screen } from '@testing-library/react';
-import { describe, expect } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
 describe('home-contact-cards', () => {
-  test.skip('the link will match with prop passed in', () => {
+  test('the link will match with prop passed in', () => {
     const contentName = 'flies';
 
     render(<HomeContentCards contentName={contentName} />);
