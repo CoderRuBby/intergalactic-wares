@@ -24,7 +24,7 @@ describe('footer-nav', () => {
     expect(careersLink).toBeInTheDocument();
     expect(careersLink).toHaveAttribute('href', '/careers');
   });
-  it.skip('has a contact link', () => {
+  it('has a contact link', () => {
     render(component);
 
     const contactLink = screen.getByRole('link', { name: /contact/i });

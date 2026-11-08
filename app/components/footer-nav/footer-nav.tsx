@@ -5,6 +5,7 @@ export default function FooterNav() {
     <footer>
       <Link href='/about'>About</Link>
       <Link href='/careers'>Careers</Link>
+      <Link href='/contact'>Contact</Link>
     </footer>
   );
 }
