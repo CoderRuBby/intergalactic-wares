@@ -41,4 +41,13 @@ describe('HeaderNav', () => {
     expect(loginLink).toBeInTheDocument();
     expect(loginLink).toHaveAttribute('href', '/login');
   });
+
+  it('has a shopping cart link', () => {
+    render(component);
+
+    const shoppingCart = screen.getByRole('link', { name: /shopping cart/i });
+
+    expect(shoppingCart).toBeInTheDocument();
+    expect(shoppingCart).toHaveAttribute('href', '/cart');
+  });
 });
