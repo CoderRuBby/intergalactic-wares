@@ -16,7 +16,7 @@ describe('footer-nav', () => {
     expect(aboutLink).toBeInTheDocument();
     expect(aboutLink).toHaveAttribute('href', '/about');
   });
-  it.skip('has a careers link', () => {
+  it('has a careers link', () => {
     render(component);
 
     const careersLink = screen.getByRole('link', { name: /careers/i });
