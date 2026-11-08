@@ -32,4 +32,13 @@ describe('HeaderNav', () => {
 
     expect(searchBar).toBeInTheDocument();
   });
+
+  it('has a log in link', () => {
+    render(component);
+
+    const loginLink = screen.getByRole('link', { name: /log in/i });
+
+    expect(loginLink).toBeInTheDocument();
+    expect(loginLink).toHaveAttribute('href', '/login');
+  });
 });
