@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import HeaderNav from '@/app/components/header-nav';
+import HeaderNav from '@/app/components/header-nav/header-nav';
 import { render, screen } from '@testing-library/react';
 
 describe('HeaderNav', () => {
@@ -23,5 +23,13 @@ describe('HeaderNav', () => {
     });
 
     expect(imageLink).toHaveAttribute('href', '/');
+  });
+
+  it('has a search bar', () => {
+    render(component);
+
+    const searchBar = screen.getByRole('searchbox');
+
+    expect(searchBar).toBeInTheDocument();
   });
 });
