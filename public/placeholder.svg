@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Image placeholder</title>
+  <desc id="desc">Gray outlined image frame containing two mountains and a sun.</desc>
+  <rect x="35" y="35" width="730" height="530" rx="48" fill="#f1f1f1" stroke="#666666" stroke-width="28"/>
+  <circle cx="550" cy="220" r="72" fill="#929292"/>
+  <path d="M 49 512 L 280 275 Q 295 260 310 275 L 470 438 L 555 352 Q 570 337 585 352 L 751 515 L 751 517 Q 751 551 717 551 L 83 551 Q 49 551 49 517 Z" fill="#929292"/>
+</svg>
