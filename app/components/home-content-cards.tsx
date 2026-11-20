@@ -8,7 +8,7 @@ export default function HomeContentCards({
 }) {
   return (
     <Link href={`/${contentName}`}>
-      <Image src='' alt={contentName} fill={true} />
+      <Image src='placeholder.svg' alt={contentName} height={600} width={800} />
     </Link>
   );
 }
