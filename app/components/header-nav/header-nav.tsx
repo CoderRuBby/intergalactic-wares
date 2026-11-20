@@ -8,7 +8,12 @@ export default function HeaderNav() {
   return (
     <header>
       <Link href='/'>
-        <Image src='' alt='Intergalactic Wares logo' fill={true} />
+        <Image
+          src='placeholder.svg'
+          alt='Intergalactic Wares logo'
+          width={800}
+          height={600}
+        />
       </Link>
       <SearchBar />
       <LoginLink />
