@@ -18,4 +18,6 @@
   --color-primary-border: #406695;
 
   --color-primary-focus: #0c60c7;
+
+  --text-mobile: clamp(10px, 5vw, 2rem);
 }
