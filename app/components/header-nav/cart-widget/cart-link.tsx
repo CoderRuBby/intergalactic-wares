@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function CartLink() {
   return (
-    <Link href='/cart'>
+    <Link href='/cart' className='w-[50%]'>
       <Image
         src='placeholder.svg'
         alt='shopping cart'
