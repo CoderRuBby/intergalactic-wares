@@ -2,6 +2,7 @@ import SearchBar from './search-bar';
 import LoginLink from './account-widget/login-link';
 import CartLink from './cart-widget/cart-link';
 import LogoLink from './logo-link';
+import FilterButton from './filter-widget/filter-button';
 
 export default function HeaderNav() {
   return (
@@ -13,7 +14,8 @@ export default function HeaderNav() {
           <CartLink />
         </div>
       </div>
-      <div className='flex justify-center mt-1'>
+      <div className='flex justify-center mt-1 gap-1'>
+        <FilterButton />
         <SearchBar />
       </div>
     </header>
