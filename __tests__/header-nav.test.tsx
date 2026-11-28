@@ -50,4 +50,12 @@ describe('HeaderNav', () => {
     expect(shoppingCart).toBeInTheDocument();
     expect(shoppingCart).toHaveAttribute('href', '/cart');
   });
+
+  it('has a filter button', () => {
+    render(component);
+
+    const filterButton = screen.getByRole('button', { name: /filter/i });
+
+    expect(filterButton).toBeInTheDocument();
+  });
 });
