@@ -5,15 +5,15 @@ import LogoLink from './logo-link';
 
 export default function HeaderNav() {
   return (
-    <header>
-      <div className='w-full flex items-center gap-3 justify-between pr-5'>
+    <header className='p-1'>
+      <div className='w-full flex items-center gap-3 justify-between '>
         <LogoLink />
-        <div className='flex flex-row gap-3 w-[30%] items-center'>
+        <div className='flex flex-row gap-2 items-center'>
           <LoginLink />
           <CartLink />
         </div>
       </div>
-      <div className='flex justify-center w-full mt-2 mb-2'>
+      <div className='flex justify-center mt-1'>
         <SearchBar />
       </div>
     </header>

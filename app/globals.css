@@ -19,5 +19,7 @@
 
   --color-primary-focus: #0c60c7;
 
-  --text-mobile: clamp(10px, 5vw, 2rem);
+  --text-mobile: clamp(23px, 6vw, 2rem);
+
+  --spacing-mobile-nav-height: clamp(55px, 7vh, 6rem);
 }
